@@ -1,0 +1,132 @@
+.sidebar {
+  width: 240px;
+  background-color: #F3F4F9;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 2; }
+  .sidebar_ipad_closed {
+    width: 104px; }
+    .sidebar_ipad_closed .sidebar__logo {
+      justify-content: center;
+      padding: 40px 40px 0 40px;
+      margin-bottom: 47px; }
+      .sidebar_ipad_closed .sidebar__logo__img {
+        margin: 0;
+        float: none;
+        width: 24px;
+        height: 24px; }
+      .sidebar_ipad_closed .sidebar__logo__text {
+        display: none; }
+    .sidebar_ipad_closed .sidebar__menu__item {
+      height: 60px; }
+      .sidebar_ipad_closed .sidebar__menu__item__icon {
+        margin: 0; }
+      .sidebar_ipad_closed .sidebar__menu__item__text {
+        display: none; }
+  .sidebar_ipad_opened {
+    width: 246px; }
+    .sidebar_ipad_opened .sidebar__logo {
+      justify-content: flex-start;
+      padding: 40px 0 0 40px;
+      margin-bottom: 47px; }
+      .sidebar_ipad_opened .sidebar__logo__img {
+        margin-right: 5px;
+        width: 24px;
+        height: 24px; }
+  .sidebar_mobile_closed {
+    width: 12px; }
+    .sidebar_mobile_closed .sidebar__logo {
+      display: none; }
+    .sidebar_mobile_closed .sidebar__menu {
+      display: none; }
+  .sidebar_mobile_opened {
+    width: 192px; }
+    .sidebar_mobile_opened .sidebar__logo {
+      padding: 40px 0 0 20px;
+      margin-bottom: 47px; }
+      .sidebar_mobile_opened .sidebar__logo__img {
+        width: 24px;
+        height: 24px; }
+      .sidebar_mobile_opened .sidebar__logo__text {
+        font-size: 14px;
+        line-height: 21px; }
+    .sidebar_mobile_opened .sidebar__menu__item {
+      padding: 20px 0px 22px 19px; }
+      .sidebar_mobile_opened .sidebar__menu__item__icon {
+        display: none; }
+      .sidebar_mobile_opened .sidebar__menu__item__text {
+        font-size: 16px;
+        line-height: 22px; }
+  .sidebar__button {
+    -webkit-mask-image: url("../../images/button.png");
+    -webkit-mask-position: center;
+    mask: url(#button_mask);
+    mask-position: center;
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 48px;
+    height: 106px; }
+    .sidebar__button_ipad_closed {
+      background: #F3F4F9 url("../../images/burger menu.png") no-repeat center;
+      display: flex;
+      left: 104px; }
+    .sidebar__button_ipad_opened {
+      background: #F3F4F9 url("../../images/menu exit.png") no-repeat center;
+      display: flex;
+      left: 246px; }
+    .sidebar__button_mobile_closed {
+      background: #F3F4F9 url("../../images/burger menu.png") no-repeat center;
+      display: flex;
+      left: 12px; }
+    .sidebar__button_mobile_opened {
+      background: #F3F4F9 url("../../images/menu exit.png") no-repeat center;
+      display: flex;
+      left: 192px; }
+  .sidebar__logo {
+    padding: 41px 0 0 41px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 41px; }
+    .sidebar__logo__img {
+      margin-right: 10px;
+      float: left; }
+    .sidebar__logo__text {
+      font-family: "Poppins", sans-serif;
+      color: #333333;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px; }
+  .sidebar .sidebar__menu {
+    list-style-type: none;
+    width: 100%; }
+    .sidebar .sidebar__menu__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding: 18px 0 23px 40px; }
+      .sidebar .sidebar__menu__item__hover-line {
+        position: absolute;
+        background-color: black;
+        width: 3px;
+        height: 24px;
+        left: 0;
+        display: none; }
+      .sidebar .sidebar__menu__item__icon {
+        margin-right: 12px; }
+      .sidebar .sidebar__menu__item__text {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333333; }
+      .sidebar .sidebar__menu__item_active * {
+        stroke: #34ABE0;
+        color: #34ABE0; }
+      .sidebar .sidebar__menu__item_active .sidebar__menu__item__hover-line {
+        display: inline-block;
+        background-color: #34ABE0; }
+
+/*# sourceMappingURL=sidebar.css.map */

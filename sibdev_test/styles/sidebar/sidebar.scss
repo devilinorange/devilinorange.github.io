@@ -1,0 +1,220 @@
+$font-Poppins: 'Poppins', sans-serif;
+$font-OpenSans: 'Open Sans', sans-serif;
+$font-primaryColor: #333333;
+
+.sidebar {
+  width: 240px;
+  background-color: #F3F4F9;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 2;
+
+  // IPAD ADAPTIVE
+
+  &_ipad_closed {
+    width: 104px;
+
+    .sidebar__logo {
+      justify-content: center;
+      padding: 40px 40px 0 40px;
+      margin-bottom: 47px;
+
+      &__img {
+        margin: 0;
+        float: none;
+        width: 24px;
+        height: 24px;
+      }
+
+      &__text {
+        display: none;
+      }
+    }
+
+    .sidebar__menu {
+      &__item {
+        height: 60px;
+
+        &__icon {
+          margin: 0;
+        }
+
+        &__text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_ipad_opened {
+    width: 246px;
+
+      .sidebar__logo {
+        justify-content: flex-start;
+        padding: 40px 0 0 40px;
+        margin-bottom: 47px;
+
+        &__img {
+          margin-right: 5px;
+          width: 24px;
+          height: 24px;
+        }
+
+      }
+  }
+
+  // MOBILE ADAPTIVE
+
+  &_mobile_closed {
+    width: 12px;
+
+    .sidebar__logo {
+      display: none;
+    }
+
+    .sidebar__menu {
+      display: none;
+    }
+  }
+
+  &_mobile_opened {
+    width: 192px;
+
+    .sidebar {
+      &__logo {
+        padding: 40px 0 0 20px;
+        margin-bottom: 47px;
+
+        &__img {
+          width: 24px;
+          height: 24px;
+        }
+
+        &__text {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+    .sidebar__menu {
+      &__item {
+        padding: 20px 0px 22px 19px;
+
+        &__icon {
+          display: none;
+        }
+
+        &__text {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  // SIDEBAR ELEMENTS
+
+  &__button {
+    -webkit-mask-image: url('../../images/button.png');
+    -webkit-mask-position: center;
+    mask: url(#button_mask);
+    mask-position: center;
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 48px;
+    height: 106px;
+
+    &_ipad_closed {
+      background: #F3F4F9 url('../../images/burger menu.png') no-repeat center;
+      display: flex;
+      left: 104px;
+    }
+
+    &_ipad_opened {
+      background: #F3F4F9 url('../../images/menu exit.png') no-repeat center;
+      display: flex;
+      left: 246px;
+    }
+
+    &_mobile_closed {
+      background: #F3F4F9 url('../../images/burger menu.png') no-repeat center;
+      display: flex;
+      left: 12px;
+    }
+
+    &_mobile_opened {
+      background: #F3F4F9 url('../../images/menu exit.png') no-repeat center;
+      display: flex;
+      left: 192px;
+    }
+  }
+
+  &__logo {
+    padding: 41px 0 0 41px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 41px;
+
+    &__img {
+      margin-right: 10px;
+      float: left;
+    }
+
+    &__text {
+      font-family: $font-Poppins;
+      color: $font-primaryColor;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .sidebar__menu {
+    list-style-type: none;
+    width: 100%;
+
+
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding: 18px 0 23px 40px;
+
+      &__hover-line {
+        position: absolute;
+        background-color: black;
+        width: 3px;
+        height: 24px;
+        left: 0;
+        display: none;
+      }
+
+      &__icon {
+        margin-right: 12px;
+      }
+
+      &__text {
+        font-family: $font-OpenSans;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $font-primaryColor;
+      }
+
+      &_active {
+        * {
+          stroke: #34ABE0;
+          color: #34ABE0;
+        }
+
+        .sidebar__menu__item__hover-line {
+          display: inline-block;
+          background-color: #34ABE0;
+        }
+      }
+    }
+  }
+}

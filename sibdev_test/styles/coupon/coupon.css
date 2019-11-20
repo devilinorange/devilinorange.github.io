@@ -1,0 +1,123 @@
+.coupon-page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.coupon {
+  -webkit-mask-image: url("../../images/cover.png");
+  -webkit-mask-position: center, bottom left;
+  -webkit-mask-size: 336px 161px;
+  mask: url(#coupon_mask);
+  position: relative;
+  padding: 16px 20px;
+  top: 1px;
+  left: 1px;
+  border-radius: 10px;
+  width: 336px;
+  height: 161px;
+  background-color: #fff; }
+  .coupon__image {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .coupon__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px; }
+  .coupon__description {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0.5; }
+  .coupon__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 20px; }
+  .coupon__num {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 28px;
+    color: #DF212D;
+    margin-bottom: 6px; }
+  .coupon__label {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    opacity: 0.5; }
+  @media (max-width: 1380px) {
+    .coupon {
+      -webkit-mask-size: 294px 142px;
+      padding: 15px 18px;
+      width: 294px;
+      height: 142px; }
+      .coupon__image {
+        width: 104px;
+        top: 7px; }
+      .coupon__title {
+        font-size: 14px; }
+      .coupon__description {
+        font-size: 14px; } }
+  @media (max-width: 660px) {
+    .coupon {
+      -webkit-mask-size: 266px 128px;
+      padding: 16px 20px;
+      width: 266px;
+      height: 128px; }
+      .coupon__image {
+        width: 89px; }
+      .coupon__title {
+        font-size: 12px; }
+      .coupon__description {
+        font-size: 12px; }
+      .coupon__num {
+        font-size: 28px;
+        margin-bottom: 0; }
+      .coupon__label {
+        font-size: 12px; } }
+
+.coupon-border {
+  -webkit-mask-image: url("../../images/cover.png");
+  -webkit-mask-position: center, bottom left;
+  -webkit-mask-size: 338px 163px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  mask: url(#coupon_mask);
+  width: 338px;
+  border-radius: 10px;
+  height: 163px; }
+  .coupon-border:hover {
+    background-color: #DF212D; }
+  @media (max-width: 1380px) {
+    .coupon-border {
+      -webkit-mask-size: 296px 144px;
+      mask-size: 296px 144px;
+      width: 296px;
+      height: 144px; } }
+  @media (max-width: 660px) {
+    .coupon-border {
+      -webkit-mask-size: 268px 130px;
+      mask-size: 268px 130px;
+      width: 268px;
+      height: 130px; } }
+
+.coupon-shadow {
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.15));
+  margin-bottom: 20px; }
+  @media (max-width: 660px) {
+    .coupon-shadow {
+      margin-bottom: 15px; } }
+
+/*# sourceMappingURL=coupon.css.map */

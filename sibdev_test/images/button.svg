@@ -1,0 +1,9 @@
+<svg width="0" height="0">
+  <defs>
+    <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+      <rect x="0" y="0" width="1" height="1" fill="black" />
+      <rect x="0" y="0.5" width="0.5" height="0.5" fill="white" />
+      <!-- <path d="M0 0C0 11.7415 9.99255 16.1938 20.8591 21.0356C33.809 26.8055 48 33.1285 48 53C48 72.8715 33.809 79.1945 20.8591 84.9644C9.99255 89.8062 0 94.2585 0 106V0Z" fill="white"/> -->
+    </mask>
+  </defs>
+</svg>
